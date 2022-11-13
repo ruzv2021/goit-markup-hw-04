@@ -130,8 +130,13 @@ p {
 
 
 .hero {
-
+min-height: 600px;
     background: #2F303A;
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -220,6 +225,31 @@ button:focus {
     padding-bottom: 10px;
     color: #212121;
 }
+.about-title::before{
+    content: " ";
+    display: block;
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-position:center;
+    margin-bottom: 30px;
+}
+
+.about-title.anten::before{
+    background-image: url(../images/antenna\ 1.svg);
+    }
+.about-title.clock::before{
+        background-image: url(../images/clock\ 1.svg);
+    }
+.about-title.graph::before{
+    background-image: url(../images/diagram\ 1.svg);
+}
+.about-title.kosmo::before{
+    background-image: url(../images/astronaut\ 1.svg);
+}
+
+
 
 .about-text {
     font-style: normal;
