@@ -96,8 +96,16 @@ p {
 .item-email {
     margin-left: auto;
 }
-
-
+.link-phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .link-studio:hover,
@@ -110,10 +118,21 @@ p {
 .phone-footer:hover {
     color: var(--accent-color);
 }
-
-.link-studio {
-    color: var();
+.item-phone,
+.item-email{
+    fill: none;
+    stroke: #757575;
 }
+.item-email:hover,
+.item-phone:hover{
+stroke: var(--accent-color);
+}
+.icon-email,
+.icon-phone{
+    margin-right: 10px;
+}
+
+
 
 .link-studio-blue,
 .link-portfolio-blue {
@@ -122,12 +141,17 @@ p {
 
 .link-email {
     color: #757575;
+    margin-left: 10px;
 }
 
 .link-phone {
     color: #757575;
+    margin-left: 10px;
 }
 
+
+
+/* hero */
 
 .hero {
     min-height: 600px;
@@ -391,12 +415,49 @@ button:focus {
 .social-icons{
     display: flex;
 }
+.social-icon{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
 
-.social-icons>.social-link{
+.social-item.social-link{
     width: 100%;
     height: 100%;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
+/* customers */
+.title-block{
+        text-align: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+margin-bottom: 50px;
+}
+
+.list-logo{
+    display: flex;
+    justify-content: center;
+        align-items: center;
+        
+    /* background-color: tomato; */
+
+}
+.list-logo.item{
+    display: inline-block;
+    border: #AFB1B8;
+    border-radius: 1px;
+}
+
+
 /* logo design */
 
 
