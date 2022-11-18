@@ -96,11 +96,13 @@ p {
 .item-email {
     margin-left: auto;
 }
-.link-phone{
+
+.link-phone {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .link-email {
     display: flex;
     justify-content: center;
@@ -118,17 +120,20 @@ p {
 .phone-footer:hover {
     color: var(--accent-color);
 }
+
 .item-phone,
-.item-email{
+.item-email {
     fill: none;
     stroke: #757575;
 }
+
 .item-email:hover,
-.item-phone:hover{
-stroke: var(--accent-color);
+.item-phone:hover {
+    stroke: var(--accent-color);
 }
+
 .icon-email,
-.icon-phone{
+.icon-phone {
     margin-right: 10px;
 }
 
@@ -262,7 +267,7 @@ button:focus {
 
 .about-title.anten::before {
     background-image: url(../images/antenna.svg);
-    
+
 }
 
 .about-title.clock::before {
@@ -286,6 +291,7 @@ button:focus {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+
 }
 
 
@@ -334,9 +340,9 @@ button:focus {
 }
 
 .staff {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-     0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -391,71 +397,94 @@ button:focus {
     display: flex;
 }
 
+/* social icons */
 
-.social-icons>.social-item{
-    /* display: inline-block; */
+.social-icons>.social-item {
     width: 44px;
     height: 44px;
-    background-color: tomato ;
     margin-right: 10px;
-    margin-bottom: 30px;
-    margin-top: 16px;
-    justify-content: center;
+    background-color: tomato;
     border-radius: 50%;
-
-}
-.social-icons>.social-item:last-child{
-    margin-right: 0;
-}
-.social-icons>.social-item:first-child {
-    margin-left: 32px;
-}
-
-
-.social-icons{
-    display: flex;
-}
-.social-icon{
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-}
-
-.social-item.social-link{
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
+.social-icons>.social-item:last-child {
+    margin-right: 0;
+}
+
+.social-icons>.social-item:first-child {
+    margin-left: 32px;
+   
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+    margin-top: 16px;
+    margin-right: 32px;
+        margin-bottom: 30px;
+}
+
+.social-icons>.social-item:hover {
+    background-color: var(--accent-color);
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
 
 
 /* customers */
-.title-block{
-        text-align: center;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #212121;
-margin-bottom: 50px;
+.title-block {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
 }
 
-.list-logo{
+.list-logo {
     display: flex;
     justify-content: center;
-        align-items: center;
-        
-    /* background-color: tomato; */
+    align-items: center;
+
+
 
 }
-.list-logo.item{
-    display: inline-block;
-    border: #AFB1B8;
+
+.list-logo>.item {
+    border: 1px solid #AFB1B8;
     border-radius: 1px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin-left: 30px;
+
+} 
+
+.list-logo>.item:first-child {
+    margin-left: 0;
 }
+
+.list-logo > .item:hover {
+border-color: var(--accent-color);
+stroke: var(--accent-color);
+
+}
+
 
 
 /* logo design */
@@ -487,7 +516,11 @@ margin-bottom: 50px;
 
 /* Buttons portfolio */
 
-
+.button:hover {
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.12),
+        2px 0px 1px rgba(0, 0, 0, 0.08),
+        1px 0px 3px rgba(0, 0, 0, 0.1);
+}
 
 
 
@@ -633,6 +666,14 @@ margin-bottom: 50px;
 
 }
 
+.example:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+
 
 
 /* подвал */
@@ -689,14 +730,14 @@ margin-bottom: 50px;
 
 .insta {
     display: inline-block;
-        width: 44px;
-        height: 44px;
-        background-color: rgba(255, 255, 255, 0.07);
-        border-radius: 50%;
-        margin-right: 10px;
-        margin-top: 20px;
-        background-repeat: no-repeat;
-        background-position: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url(../images/ellipse-insta.svg);
 
 }
@@ -706,53 +747,57 @@ margin-bottom: 50px;
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
-border-radius: 50%;
+    border-radius: 50%;
     margin-right: 10px;
     margin-top: 20px;
     background-repeat: no-repeat;
-        background-position: center;
+    background-position: center;
     background-image: url(../images/ellipse-twit.svg);
-   
+
 
 
 }
 
 .facebook {
     display: inline-block;
-        width: 44px;
-        height: 44px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        margin-right: 10px;
-        margin-top: 20px;
-        background-repeat: no-repeat;
-        background-position: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url(../images/ellipse-facebook.svg);
 
 }
 
 .linkedin {
     display: inline-block;
-        width: 44px;
-        height: 44px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        margin-right: 10px;
-        margin-top: 20px;
-        background-repeat: no-repeat;
-        background-position: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url(../images/ellipse-linkedin.svg);
 
 }
-.footer-social > .insta:hover{
+
+.footer-social>.insta:hover {
     background-color: var(--accent-color);
 }
+
 .footer-social>.twit:hover {
     background-color: var(--accent-color);
 }
+
 .footer-social>.facebook:hover {
     background-color: var(--accent-color);
 }
+
 .footer-social>.linkedin:hover {
     background-color: var(--accent-color);
 }
