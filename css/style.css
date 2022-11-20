@@ -428,9 +428,8 @@ button:focus {
 }
 
 .social-icons>.social-item:hover {
-    fill: var(--accent-color);
-    stroke: var(--accent-color);
-}
+    background-color: var(--accent-color);
+    }
 
 .social-link {
     display: flex;
@@ -483,6 +482,7 @@ button:focus {
 .list-logo > .item:hover {
 border-color: var(--accent-color);
 stroke: var(--accent-color);
+fill: var(--accent-color);
 
 }
 
